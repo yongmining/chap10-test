@@ -1,5 +1,7 @@
 package com.greedy.section06.time;
 
+import java.time.LocalTime;
+
 public class Application1 {
 
 	public static void main(String[] args) {
@@ -16,7 +18,9 @@ public class Application1 {
 		 * LocalTime, LocalDate, LocalDateTime, ZonedDateTime
 		 * */
 		
-
+		LocalTime timeNow = LocalTime.now();
+		
+		System.out.println("timeNow : " + timeNow);
 	}
 
 }
