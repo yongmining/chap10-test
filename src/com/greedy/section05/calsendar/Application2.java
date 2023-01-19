@@ -34,6 +34,7 @@ public class Application2 {
 		java.util.Date date = new java.util.Date(birthDay.getTimeInMillis());
 		System.out.println(date);
 		
+		
 		Date date2 = new Date(new GregorianCalendar(year, month, dayOfMonth, hour, min, second).getTimeInMillis());
 		System.out.println(date2);
 		
@@ -51,7 +52,7 @@ public class Application2 {
 	
 		System.out.println("year : " + birthDay.get(Calendar.YEAR));
 		System.out.println("month : " + birthDay.get(Calendar.MONTH));
-		System.out.println("month : " + birthDay.get(Calendar.DATE));
+		System.out.println("date : " + birthDay.get(Calendar.DATE));
 		
 		System.out.println("dayOfWeek : " + birthDay.get(Calendar.DAY_OF_WEEK));
 		

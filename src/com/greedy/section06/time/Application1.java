@@ -1,6 +1,10 @@
 package com.greedy.section06.time;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 
 public class Application1 {
 
@@ -19,8 +23,31 @@ public class Application1 {
 		 * */
 		
 		LocalTime timeNow = LocalTime.now();
+		LocalTime timeOf = LocalTime.of(18, 30, 0);
 		
 		System.out.println("timeNow : " + timeNow);
+		System.out.println("timeOf : " + timeOf);
+		
+		LocalDate dateNow = LocalDate.now();
+		LocalDate dateOf = LocalDate.of(2023, 1, 19);
+		
+		System.out.println("dateNow : " + dateNow);
+		System.out.println("dateOf : " + dateOf);
+		
+		LocalDateTime dateTimeNow = LocalDateTime.now();
+		LocalDateTime dateTimeOf = LocalDateTime.of(dateNow, timeNow);
+		
+		System.out.println("dateTimeNow : " + dateTimeNow);
+		System.out.println("dateTimeOf : " + dateTimeOf);
+		
+		ZonedDateTime zonedDateTimeNow = ZonedDateTime.now();
+		ZonedDateTime zonedDateTimeOf = ZonedDateTime.of(dateOf, timeOf, ZoneId.of("Asia/Seoul"));
+		
+		System.out.println("zonedDateTimeNow : " + zonedDateTimeNow);
+		System.out.println("zonedDateTimeOf : " + zonedDateTimeOf);
+
+		
+		
 	}
 
 }
